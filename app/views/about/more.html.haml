@@ -7,8 +7,13 @@
       .panel
         %h2= Rails.configuration.x.local_domain
 
-        - unless @instance_presenter.site_description.blank?
-          %p= @instance_presenter.site_description.html_safe
+        %p
+          A
+          %em generalist
+          Mastodon instance hosted in
+          %em France
+        %p{style: 'text-align: center;'}
+          = image_tag 'socialisme-mastodon-birdie.png', style: "height: 250px; margin-top: 5px;"
 
       .information-board
         .section
@@ -54,3 +59,6 @@
               %li= link_to t('auth.login'), new_user_session_path
             %li= link_to t('about.terms'), terms_path
             %li= link_to t('about.source_code'), 'https://github.com/tootsuite/mastodon'
+            %li= link_to "Instance source code", 'https://github.com/hrefhref/mastodon'
+            %li= link_to "Instance issues", 'https://github.com/hrefhref/mastodon/issues'
+
