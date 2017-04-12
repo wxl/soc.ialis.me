@@ -24,6 +24,10 @@
       width: 46px;
       height: 46px;
     }
+
+    span {
+      color: darken($color4, 20%);
+    }
   }
 
   h2 {
@@ -326,8 +330,8 @@
 
     img {
       display: block;
-      margin: 0 auto;
       max-width: 100%;
+      padding-right: 10px;
       height: auto;
     }
   }

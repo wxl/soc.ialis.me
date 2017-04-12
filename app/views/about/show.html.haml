@@ -18,6 +18,7 @@
   %h1
     = image_tag 'logo.png'
     Mastodon
+    %span= Rails.configuration.x.local_domain
 
   %p= t('about.about_mastodon').html_safe
 
