@@ -226,6 +226,13 @@
 
     .panel {
       padding-right: 14px;
+      .mascot {
+        text-align: center;
+        img {
+          height: 250px;
+          margin-top: 5px;
+        }
+      }
     }
   }
 
