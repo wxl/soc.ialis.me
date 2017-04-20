@@ -53,7 +53,7 @@ class ApplicationController < ActionController::Base
   def not_found
     respond_to do |format|
       format.any  { head 404 }
-      format.html { render 'errors/404', layout: 'error', status: 404 }
+      format.html { render 'errors/404', layout: 'error_not_found', status: 404 }
     end
   end
 
